@@ -154,7 +154,7 @@ function movieModal(elem) {
                 'Data de lançamento: ' + response.release_date
 
             let imdbId = response.imdb_id
-            fetch('streamAvailability' + imdbId, headersStreamAvailability)
+            fetch(streamAvailability + imdbId, headersStreamAvailability)
                 .then(resp => resp.json())
                 .then(response => {
                     let streaming = response.result.streamingInfo.pt
