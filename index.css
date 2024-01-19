@@ -1,0 +1,233 @@
+:root {
+    --main-color: #806a4a;
+    --second-color: #b38644;
+    --more-color: #e59a2a;
+    --oneMore-color: #4c463c;
+    --darkest-color: #332f2a;
+}
+
+body {
+    background-color: rgb(216, 211, 199) !important;
+}
+/*~~~~~~~~~~~~~~~~~~~NAVBAR~~~~~~~~~~~~~~~~~~~~~~*/
+.navbar {
+    background-color: var(--darkest-color);
+    font-style: wheat;
+}
+.nav-item:hover {
+    font-weight: bold;
+    font-size: 20px;
+}
+.searchBtn {
+    border: 1px solid var(--more-color);
+    border-radius: 7px;
+    background-color: transparent;
+    color: wheat;
+}
+.searchBtn:hover {
+    background-color: var(--more-color);
+    color: var(--darkest-color);
+}
+
+/*~~~~~~~~~~~~~~~~~~~ HOME ~~~~~~~~~~~~~~~~~~~~~~*/
+.mostPopularHeader {
+    display: flex;
+    justify-content: center;
+}
+#mainContent {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 10px;
+    border: 4px solid black;
+    border-radius: 10px;
+    height: 70vh;
+    -webkit-box-shadow: 0px 10px 7px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 10px 7px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 10px 7px 0px rgba(0, 0, 0, 0.75);
+}
+#poster {
+    margin-top: 10px;
+    margin-left: 50px;
+    max-width: 250px;
+}
+#poster:hover {
+    box-shadow: 6px 6px 6px 6px black;
+}
+
+#informative {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    overflow: auto;
+    text-align: center;
+}
+
+#secondaryContent {
+    margin-top: 10px;
+}
+.popularMovies {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+.posters {
+    max-width: 100px;
+}
+.generalMovies {
+    display: none;
+}
+.buttonModal {
+    background: none;
+    border: none;
+}
+#modalPoster {
+    width: 250px;
+}
+#modalInfos {
+    border-left: 1px solid black;
+}
+
+@media only screen and (max-width: 1024px) {
+    /* IPAD PRO 1024 x 1366 */
+    #mainContent {
+        height: 400px;
+    }
+    #poster {
+        margin-bottom: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: auto;
+    }
+    #informative {
+        margin-bottom: 50px;
+    }
+    #poster:hover {
+        width: 300px;
+        box-shadow: none;
+    }
+    .secondaryContent {
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        flex-direction: column;
+        width: 90%;
+        margin: auto;
+    }
+    .popularMovies {
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+    .buttonModal {
+        width: 800px;
+        height: 250px;
+        display: flex;
+        justify-content: center;
+        border-bottom: 1px solid black;
+    }
+
+    .posters {
+        margin-right: 20px;
+        max-width: 150px;
+        margin-bottom: 20px;
+    }
+    .generalMovies {
+        display: flex;
+        width: 700px;
+        text-align: start;
+    }
+    #modalInfos {
+        margin-top: 10px;
+        border-left: none;
+        border-top: 1px solid black;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    /* IPAD MINI 768 x 1024
+    */
+    #mainContent {
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+
+        box-shadow: none;
+    }
+    #poster {
+        margin-bottom: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: auto;
+    }
+    #informative {
+        margin-bottom: 50px;
+    }
+    #poster:hover {
+        width: 300px;
+        box-shadow: none;
+    }
+    .secondaryContent {
+        width: 600px;
+    }
+    .popularMovies {
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 1px solid black;
+    }
+    .buttonModal {
+        display: flex;
+    }
+
+    .posters {
+        margin-right: 20px;
+        max-width: 100px;
+        margin-bottom: 20px;
+    }
+    .generalMovies {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 4;
+        height: 100px;
+        width: 245px;
+        text-align: left;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        position: relative;
+    }
+    #modalInfos {
+        margin-top: 10px;
+        border-left: none;
+        border-top: 1px solid black;
+    }
+}
+@media only screen and (max-width: 450px) {
+    /* IPHONE 14 PRO MAX 430 x 932 */
+    #mainContent {
+        max-width: 400px;
+        margin-bottom: 250px;
+    }
+    .secondaryContent {
+        max-width: 400px;
+        margin: auto;
+    }
+}
+@media only screen and (max-width: 400px) {
+    /* IPHONE SE 375 x 667 */
+    #mainContent {
+        max-width: 350px;
+        margin-bottom: 250px;
+    }
+    .secondaryContent {
+        max-width: 350px;
+        display: flex;
+        justify-content: start;
+        margin: auto;
+    }
+    .popularMovies {
+        margin-left: auto;
+    }
+}

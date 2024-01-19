@@ -1,0 +1,180 @@
+:root {
+    --main-color: #806a4a;
+    --second-color: #b38644;
+    --more-color: #e59a2a;
+    --oneMore-color: #4c463c;
+    --darkest-color: #332f2a;
+}
+
+body {
+    background-color: rgb(216, 211, 199) !important;
+}
+
+/*~~~~~~~~~~~~~~~~~~~NAVBAR~~~~~~~~~~~~~~~~~~~~~~*/
+.navbar {
+    background-color: var(--darkest-color);
+    font-style: wheat;
+}
+.nav-item:hover {
+    font-weight: bold;
+    font-size: 20px;
+}
+.searchBtn {
+    border: 1px solid var(--more-color);
+    border-radius: 7px;
+    background-color: transparent;
+    color: wheat;
+}
+.searchBtn:hover {
+    background-color: var(--more-color);
+    color: var(--darkest-color);
+}
+/*~~~~~~~~~~~~~~~~~~~ HOME ~~~~~~~~~~~~~~~~~~~~~~*/
+h1 {
+    display: flex;
+    justify-content: center;
+}
+#dateBetween {
+    display: flex;
+    justify-content: center;
+}
+.posters {
+    width: 150px;
+    height: 225px;
+    margin-right: 10px;
+}
+.buttonModal {
+    display: flex;
+    align-items: center;
+    background: transparent;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: 1px solid black;
+    padding: 10px;
+    margin: auto;
+}
+.titleMovies {
+    width: 250px;
+    height: 30px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.generalMovies {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    height: 100px;
+    width: 245px;
+    text-align: left;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    position: relative;
+}
+
+/*~~~~~~~~~~~~~~~~~~~ MODAL ~~~~~~~~~~~~~~~~~~~~~~*/
+#modalPoster {
+    width: 250px;
+}
+
+@media only screen and (max-width: 1024px) {
+    /* IPAD PRO 1024 x 1366 */
+
+    .mainContent {
+        display: flex;
+        justify-content: start;
+        max-width: 900px;
+        margin: auto;
+        padding: auto;
+    }
+    .buttonModal {
+        display: flex;
+        justify-content: start;
+        margin: 0px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    /* IPAD MINI 768 x 1024
+  */
+    #modalPoster {
+        width: 150px;
+    }
+    .titleMovies {
+        width: 500px;
+        height: 30px;
+    }
+    .generalMovies {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 6;
+        height: 150px;
+        width: 500px;
+        text-align: left;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        position: relative;
+        box-sizing: content-box;
+    }
+    #result {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+    }
+    .mainContent {
+        display: flex;
+        max-width: 700px;
+        margin: 20px;
+    }
+    .buttonModal {
+        display: flex;
+        justify-content: start;
+        width: 680px;
+    }
+}
+@media only screen and (max-width: 450px) {
+    /* IPHONE 14 PRO MAX 430 x 932 */
+    #modalPoster {
+        width: 100px;
+    }
+    .titleMovies {
+        width: 200px;
+        height: 30px;
+    }
+    .generalMovies {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 6;
+        height: 150px;
+        width: 200px;
+        text-align: left;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        position: relative;
+    }
+    .mainContent {
+        max-width: 400px;
+        margin: 0px;
+        padding: 0px;
+    }
+    .buttonModal {
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    /* IPHONE SE 375 x 667 */
+    .generalMovies {
+        width: 175px;
+    }
+    .titleMovies {
+        width: 175px;
+        height: 30px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        overflow: hidden;
+    }
+}
